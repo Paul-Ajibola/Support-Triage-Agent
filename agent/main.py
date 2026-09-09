@@ -11,11 +11,9 @@ class TicketRequest(BaseModel):
     body: str
 
 
-
 @app.get("/health")
 def health():
     return {"status": "ok"}
-
 
 
 @app.post("/ticket")
@@ -25,3 +23,4 @@ def handle_ticket(ticket: TicketRequest):
         "status": "received",
         "response": "graph not wired yet!"
     }
+

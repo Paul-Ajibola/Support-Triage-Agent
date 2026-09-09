@@ -19,6 +19,5 @@ builder.add_node("stub", stub_node)
 builder.set_entry_point("stub")
 builder.add_edge("stub", END)
 
-
 graph = builder.compile()
 

@@ -24,3 +24,4 @@ def handle_ticket(ticket: TicketRequest):
         "response": "graph not wired yet!"
     }
 
+

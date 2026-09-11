@@ -1,3 +1,11 @@
+"""
+context_enrichment.py
+
+Node: decides which tools are relevant for this ticket based on its
+category. Always includes ticket_lookup and account_context_db; adds
+sandbox_runner for auth/integration tickets. Sets tools_to_call.
+"""
+
 # import the agent state schema
 from agent.state import AgentState
 

@@ -1,3 +1,12 @@
+"""
+intent_routing.py
+
+Node: classifies an incoming ticket by category (auth, billing,
+integration, general) and urgency (high, normal) using simple keyword
+matching. First step in the graph — determines routing for later nodes.
+"""
+
+# import libraries
 from agent.state import AgentState
 
 

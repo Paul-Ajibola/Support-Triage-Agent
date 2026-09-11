@@ -1,3 +1,12 @@
+"""
+safety_verification.py
+
+Node: sanity-checks tool_results for failures (sandbox errors, failed
+account lookups) and records them as safety_flags. Placeholder for
+real adversarial/injection defense, added in Phase 7.
+"""
+
+# import libraries
 from agent.state import AgentState
 
 def safety_verification(state: AgentState) -> AgentState:

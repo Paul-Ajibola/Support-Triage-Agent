@@ -1,3 +1,12 @@
+"""
+draft_generation.py
+
+Node: produces a draft resolution using tool_results — references a
+similar past ticket if ticket_lookup found one, otherwise recommends
+manual review. Final node before END.
+"""
+
+# import libraries
 from agent.state import AgentState
 
 def draft_generation(state: AgentState) -> AgentState:

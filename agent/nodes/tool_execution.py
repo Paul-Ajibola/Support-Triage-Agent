@@ -1,3 +1,12 @@
+"""
+tool_execution.py
+
+Node: calls each tool listed in tools_to_call (ticket_lookup,
+sandbox_runner, account_context_db) and collects their results into
+tool_results for use by later nodes.
+"""
+
+# import libraries
 from agent.state import AgentState
 from tools.ticket_lookup import ticket_lookup
 from tools.sandbox_runner import sandbox_runner

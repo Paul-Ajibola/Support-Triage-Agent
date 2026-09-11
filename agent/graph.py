@@ -5,7 +5,7 @@ from agent.state import AgentState
 from agent.nodes.intent_routing import intent_routing
 from agent.nodes.context_enrichment import context_enrichment
 from agent.nodes.tool_execution import tool_execution
-from agent.nodes.safety_verification import saafety_verification
+from agent.nodes.safety_verification import safety_verification
 from agent.nodes.draft_generation import draft_generation
 
 

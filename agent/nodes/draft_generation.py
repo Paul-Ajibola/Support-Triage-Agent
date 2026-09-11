@@ -7,7 +7,7 @@ def draft_generation(state: AgentState) -> AgentState:
     else:
         suggestion = "No similar past tickets found - recommend manual review."
     
-    state["draft response"] = (
+    state["draft_response"] = (
         f"[category={state['category']}, urgency={state['urgency']}] {suggestion}"
     )
     return state

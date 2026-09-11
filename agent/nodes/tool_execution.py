@@ -10,7 +10,7 @@ def tool_execution(state: AgentState) -> AgentState:
     if "ticket_lookup" in state["tools_to_call"]:
         results["ticket_lookup"] = ticket_lookup(state["body"])
 
-    if "sandbox_runner" in state["tools_to_Call"]:
+    if "sandbox_runner" in state["tools_to_call"]:
         results["sandbox_runner"] = sandbox_runner("print('reproduction stub')")
 
     if "account_context_db" in state["tools_to_call"]:

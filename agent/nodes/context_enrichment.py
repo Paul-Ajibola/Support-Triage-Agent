@@ -11,5 +11,5 @@ def context_enrichment(state: AgentState) -> AgentState:
 
     tools.append("account_context_db")     # always pull acount context
 
-    state["tools_in_call"] = tools
+    state["tools_to_call"] = tools
     return state

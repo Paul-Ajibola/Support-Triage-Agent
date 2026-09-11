@@ -7,7 +7,7 @@ class AgentState(TypedDict):
     category: Optional[str]
     urgency: Optional[str]
     tools_to_call: List[str]
-    tools_results: dict
+    tool_results: dict
     safety_flags: List[str]
     draft_response: Optional[str]
 

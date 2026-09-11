@@ -9,7 +9,7 @@ def intent_routing(state: AgentState) -> AgentState:
         category = "auth"
     elif "rate limit" in body or "billing" in body or "charge" in body:
         category = "billing"
-    elif "webhook" in body or "intention" in body or "api" n body:
+    elif "webhook" in body or "intention" in body or "api" in body:
         category = "general"
 
     

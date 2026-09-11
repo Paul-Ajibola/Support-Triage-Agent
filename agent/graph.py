@@ -1,3 +1,19 @@
+"""
+graph.py
+
+Defines and compiles the LangGraph state machine for the support triage
+agent. Wires the node functions (intent_routing, context_enrichment,
+tool_execution, safety_verification, draft_generation) into a linear
+pipeline: a ticket comes in, gets classified, relevant tools are called,
+outputs are sanity-checked, and a draft resolution is produced.
+
+Flow:
+    intent_routing -> context_enrichment -> tool_execution ->
+    safety_verification -> draft_generation -> END
+
+Requires: agent/state.py (AgentState schema), agent/nodes/* (node logic).
+"""
+
 # import libraries
 from langgraph.graph import StateGraph, END
 from agent.state import AgentState

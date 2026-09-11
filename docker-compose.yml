@@ -12,7 +12,7 @@ services:
       - pgdata:/var/lib/postgresql/data
 
   redis:
-    image: redis:7
+    image: redis/redis-stack-server:latest
     ports:
       - "6379:6379"
 

@@ -19,8 +19,10 @@ def intent_routing(state: AgentState) -> AgentState:
     elif "rate limit" in body or "billing" in body or "charge" in body:
         category = "billing"
     elif "webhook" in body or "intention" in body or "api" in body:
+        category = "integration"
+    else:
         category = "general"
-
+    
     
     urgency = "high" if any(
         w in body for w in ["down", "broken", "urgent", "critical"]

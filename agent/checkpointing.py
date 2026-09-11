@@ -11,5 +11,11 @@ from langgraph.checkpoint.redis import RedisSaver
 
 def get_checkpointer():
     redis_url = os.getenv("REDIS_URL", "redis://localhost:6379")
-    return RedisSaver.from_conn_string(redis_url)
+    # designed to be used as a context manager and not called directly
+    cm = RedisSaver.from_conn_string(redis_url)
+    checkpointer = cm.__enter__()
+    checkpointer.setup()
+    return checkpointer
+
+
 

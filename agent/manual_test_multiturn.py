@@ -38,3 +38,15 @@ print("\n--- Turn 2 ---")
 print(turn2)
 print("\nConversation history so far:", turn2["conversation_history"])
 print("Turn count:", turn2["turn_count"])
+
+
+# turn 3 - follow-up, same thread_id, minimal new input
+turn3 = graph.invoke({
+    "body": "This also failed, what is the next thing to do?",
+}, config=config)
+
+
+print("\n--- Turn 3 ---")
+print(turn3)
+print("\nConversation history so far:", turn3["conversation_history"])
+print("Turn count:", turn3["turn_count"])

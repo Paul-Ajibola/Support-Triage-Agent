@@ -1,4 +1,14 @@
 # tools/ticket_lookup.py
+"""
+ticket_lookup.py
+
+Tool: searches historical tickets (title/body) for similar past issues
+using a simple ILIKE match. Used by the agent to surface prior
+resolutions for a new incoming ticket.
+
+Requires: Postgres running, DATABASE_URL set in .env.local, tickets
+table seeded (see seed_data.py).
+"""
 import psycopg2
 import os
 from dotenv import load_dotenv

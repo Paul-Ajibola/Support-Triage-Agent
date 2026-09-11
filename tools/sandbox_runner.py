@@ -1,3 +1,12 @@
+"""
+sandbox_runner.py
+
+Tool: executes a reported bug-report code snippet inside an isolated,
+network-disabled Docker container, with a timeout, and returns stdout/
+stderr/exit_code. Used by the agent to reproduce reported bugs safely.
+
+Requires: Docker running and accessible from this environment.
+"""
 # to manage external program
 import subprocess
 # to create temporary files and directories

@@ -1,4 +1,15 @@
 # tools/seed_accounts.py
+"""
+seed_accounts.py
+
+One-time local dev script: creates the `accounts` table in Postgres and
+seeds it with one fake account (ACC-001) for testing account_context_db.
+Not part of the live agent pipeline — throwaway test data only.
+
+Run: python tools/seed_accounts.py
+Requires: Postgres running, DATABASE_URL set in .env.local
+"""
+
 import psycopg2, os
 from dotenv import load_dotenv
 load_dotenv(".env.local")

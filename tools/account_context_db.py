@@ -1,3 +1,13 @@
+"""
+account_context_db.py
+
+Tool: read-only lookup of account tier, monthly spend, and rate limit
+for a given account_id. Used by the agent to pull customer context
+when triaging a ticket.
+
+Requires: Postgres running, DATABASE_URL set in .env.local, accounts
+table seeded (see seed_accounts.py).
+"""
 import psycopg2, os
 
 from dotenv import load_dotenv

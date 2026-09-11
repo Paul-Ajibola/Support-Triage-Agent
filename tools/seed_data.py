@@ -1,3 +1,13 @@
+"""
+seed_data.py
+
+One-time local dev script: creates the `tickets` table in Postgres and
+seeds it with a few fake historical tickets for testing ticket_lookup.
+Not part of the live agent pipeline — throwaway test data only.
+
+Run: python tools/seed_data.py
+Requires: Postgres running, DATABASE_URL set in .env.local
+"""
 import psycopg2
 import os
 from dotenv import load_dotenv

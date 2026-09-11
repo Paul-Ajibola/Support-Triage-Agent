@@ -3,7 +3,8 @@ from agent.state import AgentState
 
 
 def context_enrichment(state: AgentState) -> AgentState:
-    """decides which tools are relevant based on the classification"""
+    """decides which tools are relevant based on the classification
+    by the previous node--the context enrichment node"""
     tools = ["ticket_lookup"]    # always check historical tickets
 
     if state["category"] in ("integration", "auth"):

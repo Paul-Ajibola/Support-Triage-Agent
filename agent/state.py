@@ -10,5 +10,9 @@ class AgentState(TypedDict):
     tool_results: dict
     safety_flags: List[str]
     draft_response: Optional[str]
+    turn_count: int
+    conversation_history: List[str]
+
+    
 
 

@@ -18,3 +18,4 @@ CATEGORIES = [
 
 
 URGENCY_LEVELS = ["low", "normal", "high", "critical"]
+

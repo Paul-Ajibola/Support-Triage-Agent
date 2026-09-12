@@ -1,0 +1,153 @@
+{
+  "summary": {
+    "n_tickets": 10,
+    "category_accuracy": 0.7,
+    "urgency_accuracy": 0.5,
+    "avg_latency_ms": 454.9,
+    "avg_input_tokens": 171.5,
+    "avg_output_tokens": 99.3,
+    "estimated_cost_per_1k_requests_usd": 1.42
+  },
+  "results": [
+    {
+      "body": "User can't log in after password reset, getting 401 error.",
+      "expected": {
+        "category": "auth",
+        "urgency": "normal"
+      },
+      "predicted": {
+        "category": "auth",
+        "urgency": "high"
+      },
+      "category_correct": true,
+      "urgency_correct": false,
+      "latency_ms": 511.9
+    },
+    {
+      "body": "System is completely down, no one can access the app!",
+      "expected": {
+        "category": "bug",
+        "urgency": "critical"
+      },
+      "predicted": {
+        "category": "performance",
+        "urgency": "critical"
+      },
+      "category_correct": false,
+      "urgency_correct": true,
+      "latency_ms": 559.5
+    },
+    {
+      "body": "Customer was charged twice for the same invoice.",
+      "expected": {
+        "category": "billing",
+        "urgency": "high"
+      },
+      "predicted": {
+        "category": "billing",
+        "urgency": "high"
+      },
+      "category_correct": true,
+      "urgency_correct": true,
+      "latency_ms": 539.3
+    },
+    {
+      "body": "Webhook stopped firing after we changed our endpoint URL",
+      "expected": {
+        "category": "integration",
+        "urgency": "normal"
+      },
+      "predicted": {
+        "category": "integration",
+        "urgency": "high"
+      },
+      "category_correct": true,
+      "urgency_correct": false,
+      "latency_ms": 406.6
+    },
+    {
+      "body": "Can you add dark mode to the dashboard?",
+      "expected": {
+        "category": "feature_request",
+        "urgency": "low"
+      },
+      "predicted": {
+        "category": "feature_request",
+        "urgency": "normal"
+      },
+      "category_correct": true,
+      "urgency_correct": false,
+      "latency_ms": 500.3
+    },
+    {
+      "body": "I need to update the billing email on my account",
+      "expected": {
+        "category": "account_management",
+        "urgency": "low"
+      },
+      "predicted": {
+        "category": "billing",
+        "urgency": "normal"
+      },
+      "category_correct": false,
+      "urgency_correct": false,
+      "latency_ms": 666.7
+    },
+    {
+      "body": "Dashboard takes over 30 seconds to load every time.",
+      "expected": {
+        "category": "performance",
+        "urgency": "high"
+      },
+      "predicted": {
+        "category": "performance",
+        "urgency": "high"
+      },
+      "category_correct": true,
+      "urgency_correct": true,
+      "latency_ms": 387.1
+    },
+    {
+      "body": "Just wanted to say thanks, everything's working great.",
+      "expected": {
+        "category": "general",
+        "urgency": "low"
+      },
+      "predicted": {
+        "category": "general",
+        "urgency": "low"
+      },
+      "category_correct": true,
+      "urgency_correct": true,
+      "latency_ms": 275.6
+    },
+    {
+      "body": "API rate limit hit unexpectedly despite low usage.",
+      "expected": {
+        "category": "integration",
+        "urgency": "normal"
+      },
+      "predicted": {
+        "category": "bug_report",
+        "urgency": "high"
+      },
+      "category_correct": false,
+      "urgency_correct": false,
+      "latency_ms": 347.3
+    },
+    {
+      "body": "My account got locked out and I can't reset the password.",
+      "expected": {
+        "category": "auth",
+        "urgency": "high"
+      },
+      "predicted": {
+        "category": "auth",
+        "urgency": "high"
+      },
+      "category_correct": true,
+      "urgency_correct": true,
+      "latency_ms": 354.4
+    }
+  ]
+}

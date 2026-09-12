@@ -1,16 +1,20 @@
 """
-Runs the baseline classifier against the labelled test set,
-scores it against the ground truth, and prints accuracy/F1/latency/cost
+run_baseline.py
+
+Runs the baseline classifier against the labeled test set,
+scores it against ground truth, and prints accuracy/F1/latency/cost
 """
 
+# import json
 import json
+# import the classifier function
 from eval.baseline_classifier import classify_ticket
+# import my test data
 from eval.test_tickets import TEST_TICKETS
 
-
-# Groq free tier: 0$ - therefore, I will generate a hypothetical frontier pricing
-# for illustration purposes (GPT-4o pricing as of writing, per 1M tokens)
-
+# Groq free tier: $0 — track hypothetical pricing for
+# illustration purposes (GPT-4o pricing as of writing, per 1M tokens)
+# This is in dollars
 INPUT_COST_PER_1M = 2.50
 OUTPUT_COST_PER_1M = 10.00
 
@@ -21,20 +25,21 @@ def run_baseline():
     correct_urgency = 0
     total_latency = 0
     total_input_tokens = 0
-    total_input_tokens = 0
+    total_output_tokens = 0
 
     for ticket in TEST_TICKETS:
         prediction = classify_ticket(ticket["body"])
 
+        # set up a comparison (model vs. ground-truth); returns -> boolean value
         is_cat_correct = prediction["category"] == ticket["category"]
-        is_urg_correct = prediction["urgency"]
+        is_urg_correct = prediction["urgency"] == ticket["urgency"]
 
-        correct_category =+= is_cat_correct
+        # treats `True` as 1, and `False` as 0
+        correct_category += is_cat_correct
         correct_urgency += is_urg_correct
         total_latency += prediction["latency_ms"]
         total_input_tokens += prediction["input_tokens"]
         total_output_tokens += prediction["output_tokens"]
-
 
         results.append({
             "body": ticket["body"],
@@ -45,16 +50,12 @@ def run_baseline():
             "latency_ms": round(prediction["latency_ms"], 1),
         })
 
+    n = len(TEST_TICKETS)
+    category_accuracy = correct_category / n
+    urgency_accuracy = correct_urgency / n
+    avg_latency = total_latency / n
 
-n = len(TEST_TICKETS)
-
-category_accuracy = correct_category
-urgency_accuracy = correct_category / n 
-urgency_accuracy = correct_urgency / n 
-avg_latency = total_latency / n
-
-
-avg_input_tokens = total_input_tokens / n
+    avg_input_tokens = total_input_tokens / n
     avg_output_tokens = total_output_tokens / n
     cost_per_request = (
         (avg_input_tokens / 1_000_000) * INPUT_COST_PER_1M
@@ -72,7 +73,7 @@ avg_input_tokens = total_input_tokens / n
         "estimated_cost_per_1k_requests_usd": round(cost_per_1k_requests, 2),
     }
 
-print("\n=== Per-ticket results ===")
+    print("\n=== Per-ticket results ===")
     for r in results:
         status = "✓" if r["category_correct"] and r["urgency_correct"] else "✗"
         print(f"{status} [{r['latency_ms']}ms] expected={r['expected']} predicted={r['predicted']}")
@@ -88,10 +89,3 @@ print("\n=== Per-ticket results ===")
 
 if __name__ == "__main__":
     run_baseline()
-
-
-
-
-
-
-

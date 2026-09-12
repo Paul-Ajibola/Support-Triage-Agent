@@ -14,6 +14,7 @@ from groq import Groq
 from dotenv import load_dotenv
 from eval.category import CATEGORIES, URGENCY_LEVELS
 
+
 load_dotenv(".env.local")
 
 

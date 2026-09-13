@@ -2,7 +2,11 @@
 run_baseline.py
 
 Runs the baseline classifier against the labeled test set,
-scores it against ground truth, and prints accuracy/F1/latency/cost
+scores it against ground truth, and prints accuracy/F1/latency/cost.
+
+Expected outcome: correctness, latency, token usage and estimated cost.
+(n_tickets, category_accuracy, urgency_accuracy, avg_latency_ms, avg_input_tokens, 
+avg_output_tokens, estimated_cost_per_1k_requests_used)
 """
 
 # import json

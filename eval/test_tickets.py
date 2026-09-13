@@ -3,6 +3,8 @@ test_tickets.py
 
 Labled ticket set used to evaluate classification models (baseline vs fine-tuned)
 against a shared ground truth.
+
+Curated sample evaluation set
 """
 
 TEST_TICKETS = [

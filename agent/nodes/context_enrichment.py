@@ -12,7 +12,7 @@ from agent.state import AgentState
 
 def context_enrichment(state: AgentState) -> AgentState:
     """decides which tools are relevant based on the classification
-    by the previous node--the context enrichment node"""
+    by the previous node--the intent-routing node"""
     tools = ["ticket_lookup"]    # always check historical tickets
 
     if state["category"] in ("integration", "auth"):
@@ -22,3 +22,5 @@ def context_enrichment(state: AgentState) -> AgentState:
 
     state["tools_to_call"] = tools
     return state
+
+    

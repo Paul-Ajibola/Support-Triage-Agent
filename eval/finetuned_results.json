@@ -2,11 +2,9 @@
   "summary": {
     "n_tickets": 10,
     "category_accuracy": 0.7,
-    "urgency_accuracy": 0.5,
-    "avg_latency_ms": 453.3,
-    "avg_input_tokens": 171.5,
-    "avg_output_tokens": 96.2,
-    "estimated_cost_per_1k_requests_usd": 1.39
+    "urgency_accuracy": 0.4,
+    "average_latency_ms": 1123.8,
+    "estimated_cost_per_1k_request_usd": 0.48
   },
   "results": [
     {
@@ -17,11 +15,11 @@
       },
       "predicted": {
         "category": "auth",
-        "urgency": "high"
+        "urgency": "normal"
       },
       "category_correct": true,
-      "urgency_correct": false,
-      "latency_ms": 509.2
+      "urgency_correct": true,
+      "latency_ms": 1135.0
     },
     {
       "body": "System is completely down, no one can access the app!",
@@ -31,11 +29,11 @@
       },
       "predicted": {
         "category": "performance",
-        "urgency": "critical"
+        "urgency": "high"
       },
       "category_correct": false,
-      "urgency_correct": true,
-      "latency_ms": 455.8
+      "urgency_correct": false,
+      "latency_ms": 1036.3
     },
     {
       "body": "Customer was charged twice for the same invoice.",
@@ -49,7 +47,7 @@
       },
       "category_correct": true,
       "urgency_correct": true,
-      "latency_ms": 233.1
+      "latency_ms": 1045.0
     },
     {
       "body": "Webhook stopped firing after we changed our endpoint URL",
@@ -59,11 +57,11 @@
       },
       "predicted": {
         "category": "integration",
-        "urgency": "high"
+        "urgency": "low"
       },
       "category_correct": true,
       "urgency_correct": false,
-      "latency_ms": 225.0
+      "latency_ms": 1039.7
     },
     {
       "body": "Can you add dark mode to the dashboard?",
@@ -73,11 +71,11 @@
       },
       "predicted": {
         "category": "feature_request",
-        "urgency": "normal"
+        "urgency": "high"
       },
       "category_correct": true,
       "urgency_correct": false,
-      "latency_ms": 353.5
+      "latency_ms": 1119.0
     },
     {
       "body": "I need to update the billing email on my account",
@@ -86,12 +84,12 @@
         "urgency": "low"
       },
       "predicted": {
-        "category": "billing",
+        "category": "account_management",
         "urgency": "normal"
       },
-      "category_correct": false,
+      "category_correct": true,
       "urgency_correct": false,
-      "latency_ms": 565.0
+      "latency_ms": 1149.5
     },
     {
       "body": "Dashboard takes over 30 seconds to load every time.",
@@ -105,7 +103,7 @@
       },
       "category_correct": true,
       "urgency_correct": true,
-      "latency_ms": 415.5
+      "latency_ms": 1061.7
     },
     {
       "body": "Just wanted to say thanks, everything's working great.",
@@ -119,7 +117,7 @@
       },
       "category_correct": true,
       "urgency_correct": true,
-      "latency_ms": 661.0
+      "latency_ms": 1072.9
     },
     {
       "body": "API rate limit hit unexpectedly despite low usage.",
@@ -128,12 +126,12 @@
         "urgency": "normal"
       },
       "predicted": {
-        "category": "bug_report",
-        "urgency": "high"
+        "category": "performance",
+        "urgency": "low"
       },
       "category_correct": false,
       "urgency_correct": false,
-      "latency_ms": 500.0
+      "latency_ms": 1212.0
     },
     {
       "body": "My account got locked out and I can't reset the password.",
@@ -142,12 +140,15 @@
         "urgency": "high"
       },
       "predicted": {
-        "category": "auth",
-        "urgency": "high"
+        "category": "account_management",
+        "urgency": "low"
       },
-      "category_correct": true,
-      "urgency_correct": true,
-      "latency_ms": 615.3
+      "category_correct": false,
+      "urgency_correct": false,
+      "latency_ms": 1367.1
     }
   ]
 }
+
+
+

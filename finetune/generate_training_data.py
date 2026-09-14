@@ -8,8 +8,7 @@ overlaps with eval/test_tickets.py (the held-out evaluation set).
 
 import json
 import random
-from eval.taxonomy import CATEGORIES, URGENCY_LEVELS
-
+from eval.category import CATEGORIES, URGENCY_LEVELS
 
 
 TEMPLATES = {
@@ -56,7 +55,6 @@ TEMPLATES = {
 }
 
 
-
 FILLERS = {
     "event": ["a password reset", "the last update", "changing my email", "enabling 2FA"],
     "error": ["401", "403", "500", "timeout"],
@@ -70,6 +68,7 @@ FILLERS = {
     "action": ["export a report", "load the dashboard", "save changes"],
     "seconds": ["15", "20", "30"],
 }
+
 
 
 
@@ -101,6 +100,4 @@ if __name__ == "__main__":
         for row in dataset:
             f.write(json.dumps(row) + "\n")
     print(f"Generated {len(dataset)} training examples -> finetune/training_data.jsonl")
-
-
 

@@ -18,7 +18,9 @@ Respond ONLY with JSON in this exact format, no other text:
 def format_dataset(input_path: str, output_path: str):
     with open(input_path) as f_in, open(output_path, "w") as f_out:
         for line in f_in:
+            # load the JSON line and convert to python object
             row = json.loads(line)
+            # convert string to json
             completion = json.dumps({"category": row["category"], "urgency": row["urgency"]})
             formatted = {
                 "messages": [
@@ -33,3 +35,5 @@ def format_dataset(input_path: str, output_path: str):
 if __name__ == "__main__":
     format_dataset("finetune/training_data.jsonl", "finetune/training_data_formatted.jsonl")
     print("Formatted training data -> finetune/training_data_formatted.jsonl")
+
+    

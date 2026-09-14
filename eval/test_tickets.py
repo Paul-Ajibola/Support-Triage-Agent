@@ -9,7 +9,7 @@ Curated sample evaluation set
 
 TEST_TICKETS = [
 {"body": "User can't log in after password reset, getting 401 error.", "category": "auth", "urgency": "normal"},
-{"body": "System is completely down, no one can access the app!", "category": "bug", "urgency": "critical"},
+{"body": "System is completely down, no one can access the app!", "category": "bug_report", "urgency": "critical"},
 {"body": "Customer was charged twice for the same invoice.", "category": "billing", "urgency": "high"},
 {"body": "Webhook stopped firing after we changed our endpoint URL", "category": "integration", "urgency": "normal"},
 {"body": "Can you add dark mode to the dashboard?", "category": "feature_request", "urgency": "low"},

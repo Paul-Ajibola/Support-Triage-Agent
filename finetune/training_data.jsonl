@@ -1,0 +1,320 @@
+{"body": "the dashboard is completely broken after the last update.", "category": "bug_report", "urgency": "low"}
+{"body": "App has been really slow since changing my email.", "category": "performance", "urgency": "normal"}
+{"body": "Our Zapier integration isn't working since yesterday.", "category": "integration", "urgency": "normal"}
+{"body": "Can't log in after enabling 2FA, getting 500 error.", "category": "auth", "urgency": "normal"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "high"}
+{"body": "Any plans to support the dashboard?", "category": "feature_request", "urgency": "normal"}
+{"body": "App has been really slow since the last update.", "category": "performance", "urgency": "critical"}
+{"body": "Quick question about how the dashboard works.", "category": "general", "urgency": "normal"}
+{"body": "Getting a blank screen when I try to load the dashboard.", "category": "bug_report", "urgency": "low"}
+{"body": "Invoice for May looks incorrect.", "category": "billing", "urgency": "normal"}
+{"body": "Dashboard keeps failing under normal usage.", "category": "performance", "urgency": "normal"}
+{"body": "Quick question about how dark mode works.", "category": "general", "urgency": "normal"}
+{"body": "Webhook stopped firing after a password reset.", "category": "integration", "urgency": "high"}
+{"body": "dark mode is completely broken after the last update.", "category": "bug_report", "urgency": "high"}
+{"body": "dark mode takes over 20 seconds to load.", "category": "performance", "urgency": "normal"}
+{"body": "Quick question about how dark mode works.", "category": "general", "urgency": "normal"}
+{"body": "Two-factor authentication times out on my account.", "category": "auth", "urgency": "normal"}
+{"body": "SSO login is completely broken after the last update.", "category": "bug_report", "urgency": "critical"}
+{"body": "dark mode takes over 20 seconds to load.", "category": "performance", "urgency": "critical"}
+{"body": "My password reset link is broken.", "category": "auth", "urgency": "low"}
+{"body": "Our Zapier integration keeps failing since yesterday.", "category": "integration", "urgency": "normal"}
+{"body": "Dashboard keeps failing under normal usage.", "category": "performance", "urgency": "high"}
+{"body": "Dashboard is broken under normal usage.", "category": "performance", "urgency": "normal"}
+{"body": "Need to update my payment method, current card isn't working.", "category": "billing", "urgency": "normal"}
+{"body": "Need to update my payment method, current card is broken.", "category": "billing", "urgency": "high"}
+{"body": "Is there documentation for dark mode?", "category": "general", "urgency": "critical"}
+{"body": "bulk export crashes every time I click submit.", "category": "bug_report", "urgency": "low"}
+{"body": "SSO login takes over 30 seconds to load.", "category": "performance", "urgency": "normal"}
+{"body": "My password reset link is broken.", "category": "auth", "urgency": "normal"}
+{"body": "Two-factor authentication keeps failing on my account.", "category": "auth", "urgency": "high"}
+{"body": "App has been really slow since the last update.", "category": "performance", "urgency": "high"}
+{"body": "Two-factor authentication times out on my account.", "category": "auth", "urgency": "low"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "high"}
+{"body": "Please deactivate my account.", "category": "account_management", "urgency": "high"}
+{"body": "bulk export crashes every time I click save.", "category": "bug_report", "urgency": "normal"}
+{"body": "App has been really slow since a password reset.", "category": "performance", "urgency": "normal"}
+{"body": "API returns timeout when calling /api/v1/tickets.", "category": "integration", "urgency": "normal"}
+{"body": "Dashboard keeps failing under normal usage.", "category": "performance", "urgency": "normal"}
+{"body": "Invoice for March looks incorrect.", "category": "billing", "urgency": "high"}
+{"body": "the dashboard crashes every time I click export.", "category": "bug_report", "urgency": "high"}
+{"body": "Please deactivate my account.", "category": "account_management", "urgency": "normal"}
+{"body": "dark mode crashes every time I click save.", "category": "bug_report", "urgency": "low"}
+{"body": "Invoice for May looks incorrect.", "category": "billing", "urgency": "low"}
+{"body": "Getting a blank screen when I try to load the dashboard.", "category": "bug_report", "urgency": "high"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "high"}
+{"body": "Please consider adding the dashboard, would help a lot.", "category": "feature_request", "urgency": "normal"}
+{"body": "the dashboard takes over 30 seconds to load.", "category": "performance", "urgency": "low"}
+{"body": "Would love to see dark mode added to the product.", "category": "feature_request", "urgency": "normal"}
+{"body": "Just wanted to say thanks, the dashboard works great.", "category": "general", "urgency": "high"}
+{"body": "App has been really slow since the last update.", "category": "performance", "urgency": "normal"}
+{"body": "Would love to see SSO login added to the product.", "category": "feature_request", "urgency": "high"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "normal"}
+{"body": "Would love to see SSO login added to the product.", "category": "feature_request", "urgency": "critical"}
+{"body": "Can't log in after changing my email, getting timeout error.", "category": "auth", "urgency": "high"}
+{"body": "Just wanted to say thanks, bulk export works great.", "category": "general", "urgency": "high"}
+{"body": "Need to change the email on my account.", "category": "account_management", "urgency": "high"}
+{"body": "I was charged $49 but my plan should cost $79.", "category": "billing", "urgency": "high"}
+{"body": "Can't log in after changing my email, getting 500 error.", "category": "auth", "urgency": "normal"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "normal"}
+{"body": "Any plans to support the search bar?", "category": "feature_request", "urgency": "low"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "high"}
+{"body": "I was charged $199 but my plan should cost $29.", "category": "billing", "urgency": "high"}
+{"body": "Would love to see the search bar added to the product.", "category": "feature_request", "urgency": "normal"}
+{"body": "Please consider adding SSO login, would help a lot.", "category": "feature_request", "urgency": "high"}
+{"body": "Two-factor authentication keeps failing on my account.", "category": "auth", "urgency": "low"}
+{"body": "Is there documentation for dark mode?", "category": "general", "urgency": "high"}
+{"body": "Would love to see the search bar added to the product.", "category": "feature_request", "urgency": "high"}
+{"body": "Any plans to support SSO login?", "category": "feature_request", "urgency": "normal"}
+{"body": "Is there documentation for the dashboard?", "category": "general", "urgency": "high"}
+{"body": "Any plans to support the dashboard?", "category": "feature_request", "urgency": "critical"}
+{"body": "Can't log in after the last update, getting 403 error.", "category": "auth", "urgency": "normal"}
+{"body": "Can't log in after the last update, getting 500 error.", "category": "auth", "urgency": "low"}
+{"body": "bulk export crashes every time I click submit.", "category": "bug_report", "urgency": "critical"}
+{"body": "Two-factor authentication times out on my account.", "category": "auth", "urgency": "critical"}
+{"body": "Would love to see the search bar added to the product.", "category": "feature_request", "urgency": "normal"}
+{"body": "Is there documentation for bulk export?", "category": "general", "urgency": "normal"}
+{"body": "I was charged $199 but my plan should cost $79.", "category": "billing", "urgency": "normal"}
+{"body": "Just wanted to say thanks, the dashboard works great.", "category": "general", "urgency": "low"}
+{"body": "Please consider adding the dashboard, would help a lot.", "category": "feature_request", "urgency": "normal"}
+{"body": "My password reset link is broken.", "category": "auth", "urgency": "high"}
+{"body": "Please consider adding the search bar, would help a lot.", "category": "feature_request", "urgency": "high"}
+{"body": "Quick question about how bulk export works.", "category": "general", "urgency": "low"}
+{"body": "bulk export crashes every time I click submit.", "category": "bug_report", "urgency": "high"}
+{"body": "Dashboard times out under normal usage.", "category": "performance", "urgency": "normal"}
+{"body": "Invoice for May looks incorrect.", "category": "billing", "urgency": "critical"}
+{"body": "Just wanted to say thanks, the dashboard works great.", "category": "general", "urgency": "critical"}
+{"body": "API returns 401 when calling /api/v1/users.", "category": "integration", "urgency": "low"}
+{"body": "the search bar takes over 30 seconds to load.", "category": "performance", "urgency": "normal"}
+{"body": "Would love to see the dashboard added to the product.", "category": "feature_request", "urgency": "normal"}
+{"body": "I was charged $199 but my plan should cost $79.", "category": "billing", "urgency": "low"}
+{"body": "the dashboard takes over 30 seconds to load.", "category": "performance", "urgency": "normal"}
+{"body": "Just wanted to say thanks, bulk export works great.", "category": "general", "urgency": "high"}
+{"body": "Getting a blank screen when I try to export a report.", "category": "bug_report", "urgency": "critical"}
+{"body": "SSO login crashes every time I click export.", "category": "bug_report", "urgency": "low"}
+{"body": "Please consider adding bulk export, would help a lot.", "category": "feature_request", "urgency": "normal"}
+{"body": "the dashboard takes over 15 seconds to load.", "category": "performance", "urgency": "critical"}
+{"body": "Any plans to support bulk export?", "category": "feature_request", "urgency": "high"}
+{"body": "Need to update my payment method, current card keeps failing.", "category": "billing", "urgency": "low"}
+{"body": "Invoice for March looks incorrect.", "category": "billing", "urgency": "low"}
+{"body": "the search bar takes over 20 seconds to load.", "category": "performance", "urgency": "high"}
+{"body": "Just wanted to say thanks, the dashboard works great.", "category": "general", "urgency": "high"}
+{"body": "Quick question about how bulk export works.", "category": "general", "urgency": "high"}
+{"body": "Dashboard isn't working under normal usage.", "category": "performance", "urgency": "normal"}
+{"body": "Invoice for March looks incorrect.", "category": "billing", "urgency": "low"}
+{"body": "Two-factor authentication isn't working on my account.", "category": "auth", "urgency": "high"}
+{"body": "Quick question about how bulk export works.", "category": "general", "urgency": "high"}
+{"body": "Quick question about how the dashboard works.", "category": "general", "urgency": "low"}
+{"body": "Our Zapier integration keeps failing since yesterday.", "category": "integration", "urgency": "high"}
+{"body": "I was charged $199 but my plan should cost $149.", "category": "billing", "urgency": "critical"}
+{"body": "Any plans to support the dashboard?", "category": "feature_request", "urgency": "high"}
+{"body": "bulk export crashes every time I click save.", "category": "bug_report", "urgency": "high"}
+{"body": "SSO login is completely broken after the last update.", "category": "bug_report", "urgency": "critical"}
+{"body": "Two-factor authentication keeps failing on my account.", "category": "auth", "urgency": "normal"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "low"}
+{"body": "I was charged $199 but my plan should cost $29.", "category": "billing", "urgency": "critical"}
+{"body": "Just wanted to say thanks, SSO login works great.", "category": "general", "urgency": "normal"}
+{"body": "Need to change the email on my account.", "category": "account_management", "urgency": "high"}
+{"body": "Need to change the email on my account.", "category": "account_management", "urgency": "normal"}
+{"body": "Quick question about how dark mode works.", "category": "general", "urgency": "high"}
+{"body": "API returns 403 when calling /api/v1/tickets.", "category": "integration", "urgency": "high"}
+{"body": "Our Zapier integration isn't working since yesterday.", "category": "integration", "urgency": "critical"}
+{"body": "App has been really slow since the last update.", "category": "performance", "urgency": "normal"}
+{"body": "dark mode crashes every time I click export.", "category": "bug_report", "urgency": "high"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "high"}
+{"body": "Please consider adding the dashboard, would help a lot.", "category": "feature_request", "urgency": "normal"}
+{"body": "Webhook stopped firing after a password reset.", "category": "integration", "urgency": "high"}
+{"body": "SSO login is completely broken after the last update.", "category": "bug_report", "urgency": "normal"}
+{"body": "API returns 500 when calling /api/v1/tickets.", "category": "integration", "urgency": "high"}
+{"body": "Two-factor authentication times out on my account.", "category": "auth", "urgency": "normal"}
+{"body": "Webhook stopped firing after a password reset.", "category": "integration", "urgency": "high"}
+{"body": "Is there documentation for SSO login?", "category": "general", "urgency": "high"}
+{"body": "bulk export is completely broken after the last update.", "category": "bug_report", "urgency": "normal"}
+{"body": "Webhook stopped firing after a password reset.", "category": "integration", "urgency": "low"}
+{"body": "Any plans to support the dashboard?", "category": "feature_request", "urgency": "normal"}
+{"body": "Invoice for March looks incorrect.", "category": "billing", "urgency": "low"}
+{"body": "Two-factor authentication times out on my account.", "category": "auth", "urgency": "high"}
+{"body": "dark mode takes over 30 seconds to load.", "category": "performance", "urgency": "high"}
+{"body": "Please deactivate my account.", "category": "account_management", "urgency": "low"}
+{"body": "My password reset link keeps failing.", "category": "auth", "urgency": "high"}
+{"body": "API returns timeout when calling /api/v1/webhooks.", "category": "integration", "urgency": "normal"}
+{"body": "Can't log in after the last update, getting 401 error.", "category": "auth", "urgency": "high"}
+{"body": "Our Zapier integration times out since yesterday.", "category": "integration", "urgency": "normal"}
+{"body": "Can't log in after a password reset, getting 401 error.", "category": "auth", "urgency": "normal"}
+{"body": "dark mode takes over 30 seconds to load.", "category": "performance", "urgency": "high"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "normal"}
+{"body": "Can't log in after enabling 2FA, getting timeout error.", "category": "auth", "urgency": "low"}
+{"body": "the dashboard takes over 30 seconds to load.", "category": "performance", "urgency": "low"}
+{"body": "My password reset link times out.", "category": "auth", "urgency": "high"}
+{"body": "Quick question about how bulk export works.", "category": "general", "urgency": "high"}
+{"body": "Please deactivate my account.", "category": "account_management", "urgency": "low"}
+{"body": "I was charged $49 but my plan should cost $79.", "category": "billing", "urgency": "high"}
+{"body": "Webhook stopped firing after enabling 2FA.", "category": "integration", "urgency": "critical"}
+{"body": "Our Zapier integration times out since yesterday.", "category": "integration", "urgency": "low"}
+{"body": "Need to update my payment method, current card times out.", "category": "billing", "urgency": "normal"}
+{"body": "Need to update my payment method, current card times out.", "category": "billing", "urgency": "normal"}
+{"body": "Two-factor authentication keeps failing on my account.", "category": "auth", "urgency": "normal"}
+{"body": "Need to change the email on my account.", "category": "account_management", "urgency": "normal"}
+{"body": "Please consider adding dark mode, would help a lot.", "category": "feature_request", "urgency": "high"}
+{"body": "App has been really slow since enabling 2FA.", "category": "performance", "urgency": "normal"}
+{"body": "Would love to see bulk export added to the product.", "category": "feature_request", "urgency": "high"}
+{"body": "Please deactivate my account.", "category": "account_management", "urgency": "high"}
+{"body": "SSO login crashes every time I click submit.", "category": "bug_report", "urgency": "normal"}
+{"body": "Just wanted to say thanks, the search bar works great.", "category": "general", "urgency": "normal"}
+{"body": "Would love to see SSO login added to the product.", "category": "feature_request", "urgency": "normal"}
+{"body": "Any plans to support SSO login?", "category": "feature_request", "urgency": "low"}
+{"body": "Any plans to support bulk export?", "category": "feature_request", "urgency": "normal"}
+{"body": "the search bar is completely broken after the last update.", "category": "bug_report", "urgency": "low"}
+{"body": "Can't log in after changing my email, getting 403 error.", "category": "auth", "urgency": "low"}
+{"body": "Webhook stopped firing after enabling 2FA.", "category": "integration", "urgency": "low"}
+{"body": "Can't log in after the last update, getting 401 error.", "category": "auth", "urgency": "normal"}
+{"body": "Is there documentation for dark mode?", "category": "general", "urgency": "normal"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "high"}
+{"body": "App has been really slow since a password reset.", "category": "performance", "urgency": "normal"}
+{"body": "Can't log in after a password reset, getting 401 error.", "category": "auth", "urgency": "normal"}
+{"body": "the dashboard crashes every time I click export.", "category": "bug_report", "urgency": "normal"}
+{"body": "Our Zapier integration times out since yesterday.", "category": "integration", "urgency": "normal"}
+{"body": "Need to update my payment method, current card is broken.", "category": "billing", "urgency": "high"}
+{"body": "Need to change the email on my account.", "category": "account_management", "urgency": "normal"}
+{"body": "dark mode takes over 15 seconds to load.", "category": "performance", "urgency": "normal"}
+{"body": "Quick question about how bulk export works.", "category": "general", "urgency": "low"}
+{"body": "Two-factor authentication times out on my account.", "category": "auth", "urgency": "high"}
+{"body": "Webhook stopped firing after the last update.", "category": "integration", "urgency": "low"}
+{"body": "My password reset link times out.", "category": "auth", "urgency": "high"}
+{"body": "Is there documentation for bulk export?", "category": "general", "urgency": "normal"}
+{"body": "SSO login is completely broken after the last update.", "category": "bug_report", "urgency": "high"}
+{"body": "I was charged $199 but my plan should cost $79.", "category": "billing", "urgency": "high"}
+{"body": "Any plans to support bulk export?", "category": "feature_request", "urgency": "low"}
+{"body": "the dashboard crashes every time I click export.", "category": "bug_report", "urgency": "high"}
+{"body": "Two-factor authentication times out on my account.", "category": "auth", "urgency": "normal"}
+{"body": "App has been really slow since enabling 2FA.", "category": "performance", "urgency": "high"}
+{"body": "Can't log in after a password reset, getting timeout error.", "category": "auth", "urgency": "low"}
+{"body": "Invoice for April looks incorrect.", "category": "billing", "urgency": "high"}
+{"body": "Please consider adding bulk export, would help a lot.", "category": "feature_request", "urgency": "high"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "high"}
+{"body": "Getting a blank screen when I try to save changes.", "category": "bug_report", "urgency": "high"}
+{"body": "Need to change the email on my account.", "category": "account_management", "urgency": "high"}
+{"body": "Need to update my payment method, current card isn't working.", "category": "billing", "urgency": "normal"}
+{"body": "Getting a blank screen when I try to load the dashboard.", "category": "bug_report", "urgency": "high"}
+{"body": "Please consider adding SSO login, would help a lot.", "category": "feature_request", "urgency": "normal"}
+{"body": "Need to change the email on my account.", "category": "account_management", "urgency": "normal"}
+{"body": "Our Zapier integration keeps failing since yesterday.", "category": "integration", "urgency": "low"}
+{"body": "Two-factor authentication times out on my account.", "category": "auth", "urgency": "normal"}
+{"body": "Can't log in after a password reset, getting 500 error.", "category": "auth", "urgency": "high"}
+{"body": "Any plans to support dark mode?", "category": "feature_request", "urgency": "low"}
+{"body": "the search bar is completely broken after the last update.", "category": "bug_report", "urgency": "normal"}
+{"body": "Please deactivate my account.", "category": "account_management", "urgency": "high"}
+{"body": "Would love to see the dashboard added to the product.", "category": "feature_request", "urgency": "normal"}
+{"body": "Would love to see dark mode added to the product.", "category": "feature_request", "urgency": "high"}
+{"body": "Would love to see the search bar added to the product.", "category": "feature_request", "urgency": "critical"}
+{"body": "Need to change the email on my account.", "category": "account_management", "urgency": "high"}
+{"body": "Need to update my payment method, current card is broken.", "category": "billing", "urgency": "normal"}
+{"body": "Please deactivate my account.", "category": "account_management", "urgency": "low"}
+{"body": "Just wanted to say thanks, bulk export works great.", "category": "general", "urgency": "normal"}
+{"body": "Our Zapier integration isn't working since yesterday.", "category": "integration", "urgency": "low"}
+{"body": "API returns timeout when calling /api/v1/users.", "category": "integration", "urgency": "low"}
+{"body": "Need to update my payment method, current card keeps failing.", "category": "billing", "urgency": "high"}
+{"body": "Need to update my payment method, current card isn't working.", "category": "billing", "urgency": "normal"}
+{"body": "Getting a blank screen when I try to export a report.", "category": "bug_report", "urgency": "low"}
+{"body": "My password reset link isn't working.", "category": "auth", "urgency": "normal"}
+{"body": "Just wanted to say thanks, bulk export works great.", "category": "general", "urgency": "normal"}
+{"body": "bulk export is completely broken after the last update.", "category": "bug_report", "urgency": "normal"}
+{"body": "I was charged $99 but my plan should cost $29.", "category": "billing", "urgency": "low"}
+{"body": "Getting a blank screen when I try to export a report.", "category": "bug_report", "urgency": "low"}
+{"body": "Invoice for April looks incorrect.", "category": "billing", "urgency": "high"}
+{"body": "dark mode takes over 30 seconds to load.", "category": "performance", "urgency": "normal"}
+{"body": "Webhook stopped firing after enabling 2FA.", "category": "integration", "urgency": "normal"}
+{"body": "Just wanted to say thanks, SSO login works great.", "category": "general", "urgency": "low"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "low"}
+{"body": "Please deactivate my account.", "category": "account_management", "urgency": "critical"}
+{"body": "Any plans to support the search bar?", "category": "feature_request", "urgency": "low"}
+{"body": "API returns 500 when calling /api/v1/users.", "category": "integration", "urgency": "normal"}
+{"body": "Getting a blank screen when I try to load the dashboard.", "category": "bug_report", "urgency": "normal"}
+{"body": "App has been really slow since the last update.", "category": "performance", "urgency": "low"}
+{"body": "API returns 500 when calling /api/v1/webhooks.", "category": "integration", "urgency": "normal"}
+{"body": "Our Zapier integration keeps failing since yesterday.", "category": "integration", "urgency": "high"}
+{"body": "Our Zapier integration is broken since yesterday.", "category": "integration", "urgency": "critical"}
+{"body": "Is there documentation for the search bar?", "category": "general", "urgency": "low"}
+{"body": "Is there documentation for dark mode?", "category": "general", "urgency": "high"}
+{"body": "Please consider adding the dashboard, would help a lot.", "category": "feature_request", "urgency": "high"}
+{"body": "Dashboard isn't working under normal usage.", "category": "performance", "urgency": "high"}
+{"body": "the search bar crashes every time I click submit.", "category": "bug_report", "urgency": "high"}
+{"body": "Any plans to support SSO login?", "category": "feature_request", "urgency": "high"}
+{"body": "Need to update my payment method, current card isn't working.", "category": "billing", "urgency": "normal"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "normal"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "normal"}
+{"body": "the dashboard takes over 20 seconds to load.", "category": "performance", "urgency": "low"}
+{"body": "API returns 500 when calling /api/v1/users.", "category": "integration", "urgency": "high"}
+{"body": "Is there documentation for the search bar?", "category": "general", "urgency": "normal"}
+{"body": "API returns 500 when calling /api/v1/tickets.", "category": "integration", "urgency": "high"}
+{"body": "dark mode crashes every time I click save.", "category": "bug_report", "urgency": "critical"}
+{"body": "Is there documentation for SSO login?", "category": "general", "urgency": "low"}
+{"body": "App has been really slow since enabling 2FA.", "category": "performance", "urgency": "low"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "high"}
+{"body": "Two-factor authentication is broken on my account.", "category": "auth", "urgency": "low"}
+{"body": "Getting a blank screen when I try to export a report.", "category": "bug_report", "urgency": "high"}
+{"body": "Is there documentation for SSO login?", "category": "general", "urgency": "critical"}
+{"body": "My password reset link times out.", "category": "auth", "urgency": "normal"}
+{"body": "dark mode crashes every time I click save.", "category": "bug_report", "urgency": "low"}
+{"body": "SSO login crashes every time I click save.", "category": "bug_report", "urgency": "normal"}
+{"body": "dark mode crashes every time I click submit.", "category": "bug_report", "urgency": "low"}
+{"body": "Getting a blank screen when I try to load the dashboard.", "category": "bug_report", "urgency": "low"}
+{"body": "App has been really slow since a password reset.", "category": "performance", "urgency": "critical"}
+{"body": "Can't log in after the last update, getting 401 error.", "category": "auth", "urgency": "low"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "normal"}
+{"body": "Quick question about how the search bar works.", "category": "general", "urgency": "low"}
+{"body": "Invoice for March looks incorrect.", "category": "billing", "urgency": "high"}
+{"body": "API returns 403 when calling /api/v1/tickets.", "category": "integration", "urgency": "normal"}
+{"body": "Our Zapier integration keeps failing since yesterday.", "category": "integration", "urgency": "normal"}
+{"body": "Our Zapier integration isn't working since yesterday.", "category": "integration", "urgency": "critical"}
+{"body": "Please deactivate my account.", "category": "account_management", "urgency": "low"}
+{"body": "dark mode takes over 20 seconds to load.", "category": "performance", "urgency": "normal"}
+{"body": "API returns 500 when calling /api/v1/webhooks.", "category": "integration", "urgency": "normal"}
+{"body": "Invoice for March looks incorrect.", "category": "billing", "urgency": "normal"}
+{"body": "Getting a blank screen when I try to save changes.", "category": "bug_report", "urgency": "normal"}
+{"body": "dark mode takes over 20 seconds to load.", "category": "performance", "urgency": "critical"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "high"}
+{"body": "App has been really slow since the last update.", "category": "performance", "urgency": "normal"}
+{"body": "Need to change the email on my account.", "category": "account_management", "urgency": "critical"}
+{"body": "I was charged $49 but my plan should cost $29.", "category": "billing", "urgency": "low"}
+{"body": "Any plans to support SSO login?", "category": "feature_request", "urgency": "low"}
+{"body": "Our Zapier integration times out since yesterday.", "category": "integration", "urgency": "high"}
+{"body": "I was charged $199 but my plan should cost $149.", "category": "billing", "urgency": "high"}
+{"body": "I was charged $49 but my plan should cost $29.", "category": "billing", "urgency": "low"}
+{"body": "Our Zapier integration times out since yesterday.", "category": "integration", "urgency": "high"}
+{"body": "Dashboard times out under normal usage.", "category": "performance", "urgency": "high"}
+{"body": "Two-factor authentication keeps failing on my account.", "category": "auth", "urgency": "low"}
+{"body": "the search bar crashes every time I click submit.", "category": "bug_report", "urgency": "high"}
+{"body": "App has been really slow since a password reset.", "category": "performance", "urgency": "normal"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "low"}
+{"body": "Two-factor authentication isn't working on my account.", "category": "auth", "urgency": "normal"}
+{"body": "Just wanted to say thanks, dark mode works great.", "category": "general", "urgency": "normal"}
+{"body": "the dashboard crashes every time I click submit.", "category": "bug_report", "urgency": "normal"}
+{"body": "Invoice for March looks incorrect.", "category": "billing", "urgency": "high"}
+{"body": "Any plans to support SSO login?", "category": "feature_request", "urgency": "low"}
+{"body": "App has been really slow since changing my email.", "category": "performance", "urgency": "high"}
+{"body": "I was charged $199 but my plan should cost $79.", "category": "billing", "urgency": "normal"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "critical"}
+{"body": "Invoice for March looks incorrect.", "category": "billing", "urgency": "high"}
+{"body": "Just wanted to say thanks, SSO login works great.", "category": "general", "urgency": "low"}
+{"body": "API returns 401 when calling /api/v1/webhooks.", "category": "integration", "urgency": "high"}
+{"body": "Just wanted to say thanks, dark mode works great.", "category": "general", "urgency": "low"}
+{"body": "Our Zapier integration is broken since yesterday.", "category": "integration", "urgency": "high"}
+{"body": "Is there documentation for bulk export?", "category": "general", "urgency": "high"}
+{"body": "Any plans to support SSO login?", "category": "feature_request", "urgency": "normal"}
+{"body": "Please consider adding the dashboard, would help a lot.", "category": "feature_request", "urgency": "high"}
+{"body": "API returns 401 when calling /api/v1/users.", "category": "integration", "urgency": "normal"}
+{"body": "Can't log in after enabling 2FA, getting 401 error.", "category": "auth", "urgency": "normal"}
+{"body": "Please deactivate my account.", "category": "account_management", "urgency": "normal"}
+{"body": "Need to update my payment method, current card isn't working.", "category": "billing", "urgency": "normal"}
+{"body": "Quick question about how SSO login works.", "category": "general", "urgency": "normal"}
+{"body": "Please deactivate my account.", "category": "account_management", "urgency": "high"}
+{"body": "How do I transfer ownership of the account to a teammate?", "category": "account_management", "urgency": "low"}
+{"body": "Need to update my payment method, current card keeps failing.", "category": "billing", "urgency": "critical"}
+{"body": "Webhook stopped firing after a password reset.", "category": "integration", "urgency": "low"}
+{"body": "App has been really slow since a password reset.", "category": "performance", "urgency": "high"}
+{"body": "Can't log in after changing my email, getting 500 error.", "category": "auth", "urgency": "high"}
+{"body": "Would love to see the dashboard added to the product.", "category": "feature_request", "urgency": "normal"}
+{"body": "Webhook stopped firing after the last update.", "category": "integration", "urgency": "high"}
+{"body": "Just wanted to say thanks, dark mode works great.", "category": "general", "urgency": "high"}
+{"body": "I was charged $49 but my plan should cost $149.", "category": "billing", "urgency": "normal"}

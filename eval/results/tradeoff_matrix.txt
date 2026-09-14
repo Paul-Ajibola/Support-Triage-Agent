@@ -1,0 +1,8 @@
+Metric                        Baseline (Prompted)      Fine-Tuned (LoRA)        
+--------------------------------------------------------------------------------
+Category Accuracy             0.7                      0.7                      
+Urgency Accuracy              0.5                      0.4                      
+Avg Latency (ms)              453.3                    1123.8                   
+Cost / 1k requests ($)        1.39                     0.48                     
+
+Cost savings: 65.5%

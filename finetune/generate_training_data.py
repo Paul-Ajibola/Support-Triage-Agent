@@ -70,6 +70,23 @@ FILLERS = {
 }
 
 
+# baseline severity per category type
+CATEGORY_URGENCY_WEIGHTS = {
+    "auth": {"low": 0.01, "normal": 0.45, "high": 0.40, "critical": 0.10},
+    "billing": {"low": 0.10, "normal": 0.35, "high": 0.45, "critical": 0.10},
+    "integration": {"low": 0.10, "normal": 0.50, "high": 0.30, "critical": 0.10},
+    "bug_report": {"low": 0.05, "normal": 0.20, "high": 0.40, "critical": 0.35},
+    "feature_request": {"low": 0.80, "normal": 0.20, "high": 0.00, "critical": 0.00},
+    "account_management": {"low": 0.70, "normal": 0.30, "high": 0.00, "critical": 0.00},
+    "performance": {"low": 0.10, "normal": 0.25, "high": 0.50, "critical": 0.15},
+    "general": {"low": 0.85, "normal": 0.15, "high": 0.00, "critical": 0.00},
+}
+
+
+# the keyword that push the urgency up regardless of the category, when present in the
+# generated ticket body.
+CRITICAL_KEYWORDS = ["completely down", "unresponsive", "nobody can access", "locked out"]
+HIGH_KEYWORDS = ["broken", "crashes", "charged twice", "unexpectedly"]
 
 
 def fill(template: str) -> str:
@@ -80,24 +97,37 @@ def fill(template: str) -> str:
 
 
 
+def assign_urgency(category: str, body: str) -> str:
+    body_lower = body.lower()
+
+    if any(kw in body_lower for kw in CRITICAL_KEYWORDS):
+        return "critical"
+    if any(kw in body_lower for kw in HIGH_KEYWORDS):
+        return "high"
+
+    weights = CATEGORY_URGENCY_WEIGHTS[category]
+    levels = list(weights.keys())
+    probs = list(weights.values())
+    return random.choices(levels, weights=probs)[0]
+
+
+
 def generate(n_per_category: int = 40):
     data = []
     for category, templates in TEMPLATES.items():
         for _ in range(n_per_category):
             template = random.choice(templates)
             body = fill(template)
-            urgency = random.choices(
-                URGENCY_LEVELS, weights=[0.2, 0.4, 0.3, 0.1]
-            )[0]
+            urgency = assign_urgency(category, body)
             data.append({"body": body, "category": category, "urgency": urgency})
     random.shuffle(data)
     return data
 
 
+
 if __name__ == "__main__":
-    dataset = generate(n_per_category=40)
+    dataset = generate(n_per_category=120)
     with open("finetune/training_data.jsonl", "w") as f:
         for row in dataset:
             f.write(json.dumps(row) + "\n")
     print(f"Generated {len(dataset)} training examples -> finetune/training_data.jsonl")
-

@@ -1,8 +1,8 @@
 """
 test_tickets.py
 
-Labled ticket set used to evaluate classification models (baseline vs fine-tuned)
-against a shared ground truth.
+Labeled ticket set used to evaluate classification models (baseline vs fine-tuned)
+against a shared ground truth. It contains about 30 different data points (tickets)
 
 Curated sample evaluation set
 """
@@ -54,7 +54,6 @@ TEST_TICKETS = [
     # --- general ---
     {"body": "Do you have a status page I can check for outages?", "category": "general", "urgency": "low"},
     {"body": "Quick question, not urgent: where can I find your changelog?", "category": "general", "urgency": "low"},
-]
 ]
 
 

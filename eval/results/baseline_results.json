@@ -1,11 +1,11 @@
 {
   "summary": {
-    "n_tickets": 10,
-    "category_accuracy": 0.7,
+    "n_tickets": 30,
+    "category_accuracy": 0.8,
     "urgency_accuracy": 0.5,
-    "avg_latency_ms": 453.3,
-    "avg_input_tokens": 171.5,
-    "avg_output_tokens": 96.2,
+    "avg_latency_ms": 478.4,
+    "avg_input_tokens": 171.9,
+    "avg_output_tokens": 95.8,
     "estimated_cost_per_1k_requests_usd": 1.39
   },
   "results": [
@@ -21,7 +21,7 @@
       },
       "category_correct": true,
       "urgency_correct": false,
-      "latency_ms": 509.2
+      "latency_ms": 562.1
     },
     {
       "body": "System is completely down, no one can access the app!",
@@ -35,7 +35,7 @@
       },
       "category_correct": false,
       "urgency_correct": true,
-      "latency_ms": 455.8
+      "latency_ms": 296.7
     },
     {
       "body": "Customer was charged twice for the same invoice.",
@@ -49,7 +49,7 @@
       },
       "category_correct": true,
       "urgency_correct": true,
-      "latency_ms": 233.1
+      "latency_ms": 235.5
     },
     {
       "body": "Webhook stopped firing after we changed our endpoint URL",
@@ -63,7 +63,7 @@
       },
       "category_correct": true,
       "urgency_correct": false,
-      "latency_ms": 225.0
+      "latency_ms": 410.6
     },
     {
       "body": "Can you add dark mode to the dashboard?",
@@ -77,7 +77,7 @@
       },
       "category_correct": true,
       "urgency_correct": false,
-      "latency_ms": 353.5
+      "latency_ms": 350.0
     },
     {
       "body": "I need to update the billing email on my account",
@@ -91,7 +91,7 @@
       },
       "category_correct": false,
       "urgency_correct": false,
-      "latency_ms": 565.0
+      "latency_ms": 587.2
     },
     {
       "body": "Dashboard takes over 30 seconds to load every time.",
@@ -105,7 +105,7 @@
       },
       "category_correct": true,
       "urgency_correct": true,
-      "latency_ms": 415.5
+      "latency_ms": 409.1
     },
     {
       "body": "Just wanted to say thanks, everything's working great.",
@@ -119,7 +119,7 @@
       },
       "category_correct": true,
       "urgency_correct": true,
-      "latency_ms": 661.0
+      "latency_ms": 883.0
     },
     {
       "body": "API rate limit hit unexpectedly despite low usage.",
@@ -133,10 +133,24 @@
       },
       "category_correct": false,
       "urgency_correct": false,
-      "latency_ms": 500.0
+      "latency_ms": 476.7
     },
     {
       "body": "My account got locked out and I can't reset the password.",
+      "expected": {
+        "category": "auth",
+        "urgency": "high"
+      },
+      "predicted": {
+        "category": "account_management",
+        "urgency": "high"
+      },
+      "category_correct": false,
+      "urgency_correct": true,
+      "latency_ms": 390.9
+    },
+    {
+      "body": "Two-factor authentication codes aren't arriving via SMS.",
       "expected": {
         "category": "auth",
         "urgency": "high"
@@ -147,7 +161,273 @@
       },
       "category_correct": true,
       "urgency_correct": true,
-      "latency_ms": 615.3
+      "latency_ms": 194.7
+    },
+    {
+      "body": "I forgot my password and the reset email never showed up.",
+      "expected": {
+        "category": "auth",
+        "urgency": "normal"
+      },
+      "predicted": {
+        "category": "auth",
+        "urgency": "high"
+      },
+      "category_correct": true,
+      "urgency_correct": false,
+      "latency_ms": 534.1
+    },
+    {
+      "body": "Someone else may have accessed my account without permission.",
+      "expected": {
+        "category": "auth",
+        "urgency": "critical"
+      },
+      "predicted": {
+        "category": "auth",
+        "urgency": "critical"
+      },
+      "category_correct": true,
+      "urgency_correct": true,
+      "latency_ms": 496.1
+    },
+    {
+      "body": "My subscription renewed at the wrong price this month.",
+      "expected": {
+        "category": "billing",
+        "urgency": "normal"
+      },
+      "predicted": {
+        "category": "billing",
+        "urgency": "high"
+      },
+      "category_correct": true,
+      "urgency_correct": false,
+      "latency_ms": 525.1
+    },
+    {
+      "body": "Can I get a copy of last year's invoices for tax purposes?",
+      "expected": {
+        "category": "billing",
+        "urgency": "low"
+      },
+      "predicted": {
+        "category": "billing",
+        "urgency": "normal"
+      },
+      "category_correct": true,
+      "urgency_correct": false,
+      "latency_ms": 481.6
+    },
+    {
+      "body": "Payment failed three times and now my account is suspended.",
+      "expected": {
+        "category": "billing",
+        "urgency": "critical"
+      },
+      "predicted": {
+        "category": "billing",
+        "urgency": "high"
+      },
+      "category_correct": true,
+      "urgency_correct": false,
+      "latency_ms": 453.9
+    },
+    {
+      "body": "Our Slack integration hasn't posted any updates in two days.",
+      "expected": {
+        "category": "integration",
+        "urgency": "high"
+      },
+      "predicted": {
+        "category": "bug_report",
+        "urgency": "high"
+      },
+      "category_correct": false,
+      "urgency_correct": true,
+      "latency_ms": 715.6
+    },
+    {
+      "body": "Is there a way to connect this to our internal CRM via API?",
+      "expected": {
+        "category": "integration",
+        "urgency": "low"
+      },
+      "predicted": {
+        "category": "integration",
+        "urgency": "normal"
+      },
+      "category_correct": true,
+      "urgency_correct": false,
+      "latency_ms": 441.2
+    },
+    {
+      "body": "OAuth token keeps expiring every hour instead of every month.",
+      "expected": {
+        "category": "integration",
+        "urgency": "normal"
+      },
+      "predicted": {
+        "category": "auth",
+        "urgency": "high"
+      },
+      "category_correct": false,
+      "urgency_correct": false,
+      "latency_ms": 555.1
+    },
+    {
+      "body": "Clicking export crashes the whole browser tab.",
+      "expected": {
+        "category": "bug_report",
+        "urgency": "high"
+      },
+      "predicted": {
+        "category": "bug_report",
+        "urgency": "high"
+      },
+      "category_correct": true,
+      "urgency_correct": true,
+      "latency_ms": 1230.1
+    },
+    {
+      "body": "Search results show duplicate entries sometimes.",
+      "expected": {
+        "category": "bug_report",
+        "urgency": "normal"
+      },
+      "predicted": {
+        "category": "bug_report",
+        "urgency": "normal"
+      },
+      "category_correct": true,
+      "urgency_correct": true,
+      "latency_ms": 232.5
+    },
+    {
+      "body": "All uploaded files from last week have disappeared entirely.",
+      "expected": {
+        "category": "bug_report",
+        "urgency": "critical"
+      },
+      "predicted": {
+        "category": "bug_report",
+        "urgency": "high"
+      },
+      "category_correct": true,
+      "urgency_correct": false,
+      "latency_ms": 430.1
+    },
+    {
+      "body": "Would be great to have keyboard shortcuts for common actions.",
+      "expected": {
+        "category": "feature_request",
+        "urgency": "low"
+      },
+      "predicted": {
+        "category": "feature_request",
+        "urgency": "normal"
+      },
+      "category_correct": true,
+      "urgency_correct": false,
+      "latency_ms": 525.0
+    },
+    {
+      "body": "Any roadmap plans for a mobile app version?",
+      "expected": {
+        "category": "feature_request",
+        "urgency": "low"
+      },
+      "predicted": {
+        "category": "feature_request",
+        "urgency": "normal"
+      },
+      "category_correct": true,
+      "urgency_correct": false,
+      "latency_ms": 326.1
+    },
+    {
+      "body": "How do I add a new team member to our workspace?",
+      "expected": {
+        "category": "account_management",
+        "urgency": "normal"
+      },
+      "predicted": {
+        "category": "account_management",
+        "urgency": "normal"
+      },
+      "category_correct": true,
+      "urgency_correct": true,
+      "latency_ms": 439.4
+    },
+    {
+      "body": "Please permanently delete my account and all associated data.",
+      "expected": {
+        "category": "account_management",
+        "urgency": "normal"
+      },
+      "predicted": {
+        "category": "account_management",
+        "urgency": "normal"
+      },
+      "category_correct": true,
+      "urgency_correct": true,
+      "latency_ms": 544.0
+    },
+    {
+      "body": "Reports have been timing out for the past hour, this is blocking our team.",
+      "expected": {
+        "category": "performance",
+        "urgency": "critical"
+      },
+      "predicted": {
+        "category": "performance",
+        "urgency": "critical"
+      },
+      "category_correct": true,
+      "urgency_correct": true,
+      "latency_ms": 377.8
+    },
+    {
+      "body": "Page load feels a little slower than usual lately.",
+      "expected": {
+        "category": "performance",
+        "urgency": "low"
+      },
+      "predicted": {
+        "category": "performance",
+        "urgency": "normal"
+      },
+      "category_correct": true,
+      "urgency_correct": false,
+      "latency_ms": 219.4
+    },
+    {
+      "body": "Do you have a status page I can check for outages?",
+      "expected": {
+        "category": "general",
+        "urgency": "low"
+      },
+      "predicted": {
+        "category": "general",
+        "urgency": "low"
+      },
+      "category_correct": true,
+      "urgency_correct": true,
+      "latency_ms": 641.5
+    },
+    {
+      "body": "Quick question, not urgent: where can I find your changelog?",
+      "expected": {
+        "category": "general",
+        "urgency": "low"
+      },
+      "predicted": {
+        "category": "general",
+        "urgency": "low"
+      },
+      "category_correct": true,
+      "urgency_correct": true,
+      "latency_ms": 387.7
     }
   ]
 }

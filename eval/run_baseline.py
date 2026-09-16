@@ -85,7 +85,7 @@ def run_baseline():
     print("\n=== Baseline Summary (Phase 5) ===")
     print(json.dumps(summary, indent=2))
 
-    with open("eval/baseline_results.json", "w") as f:
+    with open("eval/results/baseline_results.json", "w") as f:
         json.dump({"summary": summary, "results": results}, f, indent=2)
 
     return summary

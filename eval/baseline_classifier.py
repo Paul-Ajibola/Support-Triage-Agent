@@ -6,7 +6,6 @@ general-purpose model (Groq), used as the 'before'
 comparison poitn against a fine-tuned model.
 """
 
-
 import os
 import json
 import time
@@ -59,6 +58,4 @@ def classify_ticket(body: str) -> dict:
         "input_tokens": usage.prompt_tokens,
         "output_tokens": usage.completion_tokens,
     }
-
-
 

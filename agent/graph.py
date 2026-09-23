@@ -29,14 +29,30 @@ from agent.checkpointing import get_checkpointer
 
 builder = StateGraph(AgentState)
 
+
+builder.add_node("injection_guardrail", injection_guardrail)
+bulder.add_node("human_escalation", human_escalation)
 builder.add_node("intent_routing", intent_routing)
 builder.add_node("context_enrichment", context_enrichment)
 builder.add_node("tool_execution", tool_execution)
 builder.add_node("safety_verification", safety_verification)
 builder.add_node("draft_generation", draft_generation)
 
+builder.set_entry_point("injection_guardrail")
 
-builder.set_entry_point("intent_routing")
+
+builder.add_conditional_edges(
+    "injection_guardrail",
+    route_after_guardrail,
+    {
+        "human_escalation": "human_escalation",
+        "intent_routing": "intent_routing",
+    },
+)
+
+
+builder.add_edge("human_escalation", END)
+
 builder.add_edge("intent_routing", "context_enrichment")
 builder.add_edge("context_enrichment", "tool_execution")
 builder.add_edge("tool_execution", "safety_verification")

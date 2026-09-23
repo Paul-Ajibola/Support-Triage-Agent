@@ -12,6 +12,9 @@ class AgentState(TypedDict):
     draft_response: Optional[str]
     turn_count: int
     conversation_history: List[str]
+    is_flagged: bool
+    flag_reason: Optional[str]
+    
 
     
     

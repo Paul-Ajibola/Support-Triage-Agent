@@ -17,19 +17,26 @@ Requires: agent/state.py (AgentState schema), agent/nodes/* (node logic).
 
 # import libraries
 from langgraph.graph import StateGraph, END
+
+#  my state
 from agent.state import AgentState
 from agent.state import AgentState
+
+# the redis checkpointer
+from agent.checkpointing import get_checkpointer
+
+# the node
 from agent.nodes.intent_routing import intent_routing
 from agent.nodes.context_enrichment import context_enrichment
 from agent.nodes.tool_execution import tool_execution
 from agent.nodes.safety_verification import safety_verification
 from agent.nodes.draft_generation import draft_generation
-from agent.checkpointing import get_checkpointer
+
 
 
 builder = StateGraph(AgentState)
 
-
+# create the nodes
 builder.add_node("injection_guardrail", injection_guardrail)
 bulder.add_node("human_escalation", human_escalation)
 builder.add_node("intent_routing", intent_routing)
@@ -38,9 +45,10 @@ builder.add_node("tool_execution", tool_execution)
 builder.add_node("safety_verification", safety_verification)
 builder.add_node("draft_generation", draft_generation)
 
+# set the entry_point
 builder.set_entry_point("injection_guardrail")
 
-
+# build the condition for the incoming ticket, and add edges
 builder.add_conditional_edges(
     "injection_guardrail",
     route_after_guardrail,

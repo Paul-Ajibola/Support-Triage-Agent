@@ -18,9 +18,9 @@ from groq import Groq
 from dotenv import load_dotenv
 
 
-load_dotenv(".env_local")
+load_dotenv(".env.local")
 
-client = Groq(api_key=os.getnev("GROQ_API_KEY"))
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 
 GUARDRAIL_SYSTEM_PROMPT = """

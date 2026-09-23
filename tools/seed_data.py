@@ -8,6 +8,7 @@ Not part of the live agent pipeline — throwaway test data only.
 Run: python tools/seed_data.py
 Requires: Postgres running, DATABASE_URL set in .env.local
 """
+
 import psycopg2
 import os
 from dotenv import load_dotenv
@@ -54,3 +55,5 @@ cur.close()
 # close DB connectio
 conn.close()
 print("Seeded tickets table.")
+
+

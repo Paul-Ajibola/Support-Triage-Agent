@@ -14,11 +14,8 @@ class AgentState(TypedDict):
     conversation_history: List[str]
     is_flagged: bool
     flag_reason: Optional[str]
-<<<<<<< HEAD
-=======
 
->>>>>>> e63ef1d9fe61735c17d6a79f924785a2707a1644
-    
+
 
     
     

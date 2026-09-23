@@ -31,6 +31,10 @@ from agent.nodes.context_enrichment import context_enrichment
 from agent.nodes.tool_execution import tool_execution
 from agent.nodes.safety_verification import safety_verification
 from agent.nodes.draft_generation import draft_generation
+from agent.nodes.injection_guardrail import injection_guardrail
+from agent.nodes.human_escalation import human_escalation
+from agent.nodes.routing import route_after_guardrail
+
 
 
 
@@ -38,7 +42,7 @@ builder = StateGraph(AgentState)
 
 # create the nodes
 builder.add_node("injection_guardrail", injection_guardrail)
-bulder.add_node("human_escalation", human_escalation)
+builder.add_node("human_escalation", human_escalation)
 builder.add_node("intent_routing", intent_routing)
 builder.add_node("context_enrichment", context_enrichment)
 builder.add_node("tool_execution", tool_execution)

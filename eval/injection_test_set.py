@@ -315,10 +315,11 @@ INJECTION_TEST_SET = [
     },
 ]
 
+
+
 if __name__ == "__main__":
     total = len(INJECTION_TEST_SET)
     injections = sum(1 for t in INJECTION_TEST_SET if t["is_injection"])
     clean = total - injections
     print(f"Total: {total} | Injection attempts: {injections} | Clean tickets: {clean}")
 
-    

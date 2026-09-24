@@ -20,7 +20,6 @@ from agent.tool_validation import (
 from agent.security.audit_log import log_security_event
 
 
-
 # # INITIAL TOOL_EXECUTION NODE
 # def tool_execution(state: AgentState) -> AgentState:
 #     results = {}
@@ -78,7 +77,7 @@ def tool_execution(state: AgentState) -> AgentState:
     state["tool_results"] = results
     if validation_errors:
         state["safety_flags"] = state.get("safety_flags", []) + [
-            f"tool_validation_failed": {err}" for err in validation_errors
+            f"tool_validation_failed: {err}" for err in validation_errors
         ]
 
     return state

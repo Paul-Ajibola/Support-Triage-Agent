@@ -25,8 +25,8 @@ def validate_ticket_lookup(query: str) -> None:
 def validate_account_context_db(account_id: str) -> None:
     if not isinstance(account_id, str):
         raise ToolValidationError("account_context_db: account_id must be a string")
-    if not re.match(ALLOWED_ACCOUNT_ID_PATTERN, account_id)
-    raise ToolValidationError(f"account_context_db: invalid account id format: {account_id}")
+    if not re.match(ALLOWED_ACCOUNT_ID_PATTERN, account_id):
+        raise ToolValidationError(f"account_context_db: invalid account id format: {account_id}")
 
 
 def validate_sandbox_runner(code: str) -> None:

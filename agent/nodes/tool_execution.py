@@ -17,6 +17,9 @@ from agent.tool_validation import (
     validate_sandbox_runner,
     ToolValidationError,
 )
+from agent.security.audit_log import log_security_event
+
+
 
 # # INITIAL TOOL_EXECUTION NODE
 # def tool_execution(state: AgentState) -> AgentState:
@@ -48,6 +51,7 @@ def tool_execution(state: AgentState) -> AgentState:
             validate_ticket_lookup(state["body"])
             results["ticket_lookup"] = ticket_lookup(state["body"])
         except ToolValidationError as e:
+            log_security_event("tool_validation_failed", details={"tool": "ticket_lookup", "error": str(e)})
             validation_errors.append(str(e))
             results["ticket_lookup"] = {"error": str(e)}
 
@@ -57,6 +61,7 @@ def tool_execution(state: AgentState) -> AgentState:
             validate_sandbox_runner(sandbox_code)
             results["sandbox_runner"] = sandbox_runner(sandbox_code)
         except ToolValidationError as e:
+            log_security_event("tool_validation_failed", details={"tool": "sandbox_runner", "error": str(e)})
             validation_errors.append(str(e))
             results["sandbox_runner"] = {"error": str(e)}
 
@@ -66,6 +71,7 @@ def tool_execution(state: AgentState) -> AgentState:
             validate_account_context_db(account_id)
             results["account_context_db"] = account_context_db(account_id)
         except ToolValidationError as e:
+            log_security_event("tool_validation_failed", details={"tool": "account_context_db", "error": str(e)})
             validation_errors.append(str(e))
             results["account_context_db"] = {"error": str(e)}
 

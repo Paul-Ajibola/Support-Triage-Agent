@@ -16,7 +16,7 @@ load_dotenv(".env.local")
 
 def account_context_db(account_id: str) -> dict:
     """Read-only lookup of account tier, spend, and rate limits."""
-    conn = psycopg2.connect(os.getenv("DATABASE_URL"))
+    conn = psycopg2.connect(os.getenv("READONLY_DATABASE_URL"))
     cur = conn.cursor()
     cur.execute("""
         SELECT account_id, tier, monthly_spend, rate_limit

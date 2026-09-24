@@ -1,0 +1,23 @@
+docker exec -it 'support-triage-agent-postgres-1' psql -U triage -d triage_agent
+
+
+docker, execute interactively inside the support-triage-agent-postgres-1 container the psql program,
+using PostgreSQL user triage, and connect it to the triage_agent database.
+It opens an interactive mode where I can write sql codes. Strange stuff.
+
+# granting special access to another role player in the database
+CREATE ROLE triage_readonly WITH LOGIN PASSWORD 'readonly_pw_change_me';
+
+# allow it to connect to the database and use the public schema
+GRANT CONNECT ON DATABASE triage_agent TO triage_readonly;
+GRANT USAGE ON SCHEMA public TO triage_readonly;
+
+--Grant SELECT only, on the specific tables this tool needs
+GRANT SELECT ON accounts TO triage_readonly;
+
+-- Explicitly revoke everything else, to be certain
+REVOKE INSERT, UPDATE, DELETE ON accounts FROM triage_readonly;
+
+-- Confirm the grants
+\dp accounts
+

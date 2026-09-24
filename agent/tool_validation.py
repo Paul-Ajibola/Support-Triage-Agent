@@ -1,7 +1,7 @@
 """
 tool_validation.py
 
-Strict shema validation for tool cal parameters. Runs before any tool is actually invoked;
+Strict schema validation for tool cal parameters. Runs before any tool is actually invoked;
 rejecting calls with unexpected types, missing fields, out-of-range values
 """
 

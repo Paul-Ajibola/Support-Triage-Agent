@@ -10,7 +10,7 @@ import os
 from dotenv import load_dotenv
 
 
-load_dotenv(".env_local")
+load_dotenv(".env.local")
 
 
 def log_security_event(ticket_id: str, event_type: str, detail: str, ticket_body: str = "") -> None:

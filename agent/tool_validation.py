@@ -8,7 +8,9 @@ rejecting calls with unexpected types, missing fields, out-of-range values
 
 ALLOWED_ACCOUNT_ID_PATTERN = r"^ACC-\d{3,6}$"
 
+
 import re
+
 
 class ToolValidationError(Exception):
     pass
@@ -19,7 +21,6 @@ def validate_ticket_lookup(query: str) -> None:
         raise ToolValidationError("ticket_lookup: query must be a string")
     if len(query) == 0 or len(query) > 2000:
         raise ToolValidationError("ticket_lookup: query length out of bounds")
-
 
 
 def validate_account_context_db(account_id: str) -> None:

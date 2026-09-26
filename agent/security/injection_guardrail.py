@@ -24,6 +24,6 @@ def injection_guardrail(state: AgentState) -> AgentState:
             detail=result["reason"],
             ticket_body=state["body"]
         )
-        return state
+    return state
 
 

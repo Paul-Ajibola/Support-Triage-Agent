@@ -8,6 +8,9 @@ matching. First step in the graph — determines routing for later nodes.
 
 # import libraries
 from agent.state import AgentState
+from agent.classifier import classify_ticket_finetuned
+import json
+
 
 
 def intent_routing(state: AgentState) -> AgentState:
@@ -23,14 +26,24 @@ def intent_routing(state: AgentState) -> AgentState:
     else:
         category = "general"
     
-    
     urgency = "high" if any(
         w in body for w in ["down", "broken", "urgent", "critical"]
         ) else "normal"
 
-    # add the decision back into the state
-    state["category"] = category
-    state["urgency"] = urgency
-    return state
 
+    # add the decision back into the state
+    return {"category": category, "urgency": urgency}
+
+
+
+def intent_routing(state: AgentState) -> AgentState:
+    "Determines the intent of the ticket and classifies its urgency"
+    try:
+        result = classify_ticket_finetuned(state["body"])
+    except Exception:
+        result = _keyword_fallback(state["body"])
+
+    state["category"] = result["category"]
+    state["urgency"] = result["urgency"]
+    return state
 
